@@ -96,6 +96,7 @@ core dut(
 
 	// USB Misc
 	.phy_tx_mode(1'b1), 
+        .usb_rst(),
 
 	// Interrupts
 	.dropped_frame(), 
@@ -120,18 +121,18 @@ core dut(
 	.ep1_we(					),
 	.ep1_full(		1'b0			),
 	// End point 1 'IN' FIFO i/f
-	.ep1_din(		ep1_us_din		),
-	.ep1_re(		ep1_us_re		),
-	.ep1_empty(		ep1_us_empty		),
+	.ep1_din(		8'h0		        ),
+	.ep1_re(		   		        ),
+	.ep1_empty(		1'b0     		),
 	.ep1_bf_en(		1'b0			),
 	.ep1_bf_size(		7'h0			),
 
 	// End point 2 configuration
 	.ep2_cfg(	`ISO  | `OUT | 14'd0256		),
 	// End point 2 'OUT' FIFO i/f
-	.ep2_dout(		ep2_us_dout		),
-	.ep2_we(		ep2_us_we		),
-	.ep2_full(		ep2_us_full		),
+	.ep2_dout(				        ),
+	.ep2_we(				        ),
+	.ep2_full(		1'b0     		),
 	// End point 2 'IN' FIFO i/f
 	.ep2_din(		8'h0			),
 	.ep2_re(					),
@@ -146,18 +147,18 @@ core dut(
 	.ep3_we(					),
 	.ep3_full(		1'b0			),
 	// End point 3 'IN' FIFO i/f
-	.ep3_din(		ep3_us_din		),
-	.ep3_re(		ep3_us_re		),
-	.ep3_empty(		ep3_us_empty		),
+	.ep3_din(		8'h0      		),
+	.ep3_re(		        		),
+	.ep3_empty(		1'b0    		),
 	.ep3_bf_en(		1'b0			),
 	.ep3_bf_size(		7'h0			),
 
 	// End point 4 configuration
 	.ep4_cfg(	`BULK | `OUT | 14'd064		),
 	// End point 4 'OUT' FIFO i/f
-	.ep4_dout(		ep4_us_dout		),
-	.ep4_we(		ep4_us_we		),
-	.ep4_full(		ep4_us_full		),
+	.ep4_dout(		        		),
+	.ep4_we(		        		),
+	.ep4_full(		1'b0     		),
 	// End point 4 'IN' FIFO i/f
 	.ep4_din(		8'h0			),
 	.ep4_re(					),
@@ -172,9 +173,9 @@ core dut(
 	.ep5_we(					),
 	.ep5_full(		1'b0			),
 	// End point 5 'IN' FIFO i/f
-	.ep5_din(		ep5_us_din		),
-	.ep5_re(		ep5_us_re		),
-	.ep5_empty(		ep5_us_empty		),
+	.ep5_din(		8'h0     		),
+	.ep5_re(				        ),
+	.ep5_empty(		1'b0     		),
 	.ep5_bf_en(		1'b0			),
 	.ep5_bf_size(		7'h0			),
 

@@ -53,40 +53,6 @@ Reading D:/Microsemi/Libero_v10.1/Model/tcl/vsim/pref.tcl
 # Loading work.uart_agent
 # Loading work.test_control
 # Loading work.bit_register
-# ** Warning: (vsim-3017) ../tb/tb.v(211): [TFMPC] - Too few port connections. Expected 85, found 84.
-# 
-#         Region: /tb/dut
-# ** Warning: (vsim-3015) ../tb/tb.v(211): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'ep1_din'. The port definition is at: ../../rtl/core/core.v(84).
-# 
-#         Region: /tb/dut
-# ** Warning: (vsim-3015) ../tb/tb.v(211): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'ep2_dout'. The port definition is at: ../../rtl/core/core.v(97).
-# 
-#         Region: /tb/dut
-# ** Warning: (vsim-3015) ../tb/tb.v(211): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'ep3_din'. The port definition is at: ../../rtl/core/core.v(104).
-# 
-#         Region: /tb/dut
-# ** Warning: (vsim-3015) ../tb/tb.v(211): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'ep4_dout'. The port definition is at: ../../rtl/core/core.v(117).
-# 
-#         Region: /tb/dut
-# ** Warning: (vsim-3015) ../tb/tb.v(211): [PCDPC] - Port size (8 or 8) does not match connection size (1) for port 'ep5_din'. The port definition is at: ../../rtl/core/core.v(124).
-# 
-#         Region: /tb/dut
-# ** Warning: (vsim-3722) ../tb/tb.v(211): [TFMPC] - Missing connection for port 'usb_rst'.
-# 
-# ** Warning: (vsim-3017) ../../rtl/uart_core/uart_core.v(236): [TFMPC] - Too few port connections. Expected 14, found 12.
-# 
-#         Region: /tb/dut/u_uart_core/u_rxfifo
-# ** Warning: (vsim-3722) ../../rtl/uart_core/uart_core.v(236): [TFMPC] - Missing connection for port 'afull'.
-# 
-# ** Warning: (vsim-3722) ../../rtl/uart_core/uart_core.v(236): [TFMPC] - Missing connection for port 'aempty'.
-# 
-# ** Warning: (vsim-3017) ../../rtl/uart_core/uart_core.v(252): [TFMPC] - Too few port connections. Expected 14, found 12.
-# 
-#         Region: /tb/dut/u_uart_core/u_txfifo
-# ** Warning: (vsim-3722) ../../rtl/uart_core/uart_core.v(252): [TFMPC] - Missing connection for port 'afull'.
-# 
-# ** Warning: (vsim-3722) ../../rtl/uart_core/uart_core.v(252): [TFMPC] - Missing connection for port 'aempty'.
-# 
 # do modelsim.do 
 # 1200: USB Reset  -----
 # 5418: Set Address = 1 -----
@@ -5742,5 +5708,5 @@ Reading D:/Microsemi/Libero_v10.1/Model/tcl/vsim/pref.tcl
 # 	Number of timeout error      is :     0
 # 	Number of error              is :     0
 # -----------------------------------------------------------------
-# ** Note: $finish    : ../tb/tb.v(246)
+# ** Note: $finish    : ../tb/tb.v(247)
 #    Time: 4225639240 ps  Iteration: 0  Instance: /tb

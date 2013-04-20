@@ -3301,7 +3301,7 @@ input         clk;
 input         start_bit;
 input         data_in;
 input         data_in_n;
-output        recv_bit_count;
+output [31:0] recv_bit_count;
 output        bit_stuff_err;
 output        ser_data_out;
 output [7:0]  par_data_out;
