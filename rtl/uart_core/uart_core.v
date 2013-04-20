@@ -225,12 +225,14 @@ async_fifo #(W,DP,0,0) u_rxfifo (
                .wr_en              (rx_fifo_wr         ),
                .wr_data            (rx_fifo_wr_data    ),
                .full               (rx_fifo_wr_full    ), // sync'ed to wr_clk
+               .afull              (                   ), // sync'ed to wr_clk
                .wr_total_free_space(                   ),
 
                .rd_clk             (app_clk            ),
                .rd_reset_n         (app_reset_n        ),
                .rd_en              (app_rxfifo_rd_en   ),
                .empty              (app_rxfifo_empty   ),  // sync'ed to rd_clk
+               .aempty             (                   ),  // sync'ed to rd_clk
                .rd_total_aval      (                   ),
                .rd_data            (app_rxfifo_data    )
                    );
@@ -241,12 +243,14 @@ async_fifo #(W,DP,0,0) u_txfifo  (
                .wr_en              (tx_fifo_wr_en      ),
                .wr_data            (app_txfifo_data    ),
                .full               (app_tx_fifo_full   ), // sync'ed to wr_clk
+               .afull              (                   ), // sync'ed to wr_clk
                .wr_total_free_space(                   ),
 
                .rd_clk             (line_clk_16x       ),
                .rd_reset_n         (line_reset_n       ),
                .rd_en              (tx_fifo_rd         ),
                .empty              (tx_fifo_rd_empty   ),  // sync'ed to rd_clk
+               .aempty             (                   ),  // sync'ed to rd_clk
                .rd_total_aval      (                   ),
                .rd_data            (tx_fifo_rd_data    )
                    );
